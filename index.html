@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Білько О.Є. ІП-02, Лабораторна №5, Варіант 50</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <h3 class="title">Завдання 1.</h3>
+    <div class="container">
+        <div class="form-container">
+            <form class="validatedForm" onsubmit="return false">
+                <div class="inputs">
+                    <div class="inputLabel">ПІБ:</div>
+                    <input type="text" id="fullName" placeholder="ТТТТТТ Т.Т.">
+                    <div class="inputLabel">Група:</div>
+                    <input type="text" id="group" placeholder="ТТ-ЧЧ">
+                    <div class="inputLabel">Телефон:</div>
+                    <input type="text" id="phoneNumber" placeholder="(ЧЧЧ)-ЧЧЧ-ЧЧ-ЧЧ">
+                    <div class="inputLabel">Адреса:</div>
+                    <input type="text" id="address" placeholder="м. ЧЧЧЧЧЧ">
+                    <div class="inputLabel">e-mail:</div>
+                    <input type="text" id="email" placeholder="тттттт@ттттт.com">
+
+                    <button class="submitButton" onclick="validate()">Відправити</button>
+                </div>
+            </form>
+        </div>
+        <div class="info-container">
+            <div>Введені дані</div>
+            <div>ПІБ: <span id="enteredFullName"></span></div>
+            <div>Група: <span id="enteredGroup"></span></div>
+            <div>Телефон: <span id="enteredPhoneNumber"></span></div>
+            <div>Адреса: <span id="enteredAddress"></span></div>
+            <div>e-mail: <span id="enteredEmail"></span></div>
+        </div>
+    </div>
+
+    <h3 class="title">Завдання 2.</h3>
+    <input type="color" id="chooseColor">
+    <table>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td id="cellByVariant">10</td>
+            <td>11</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>19</td>
+            <td>20</td>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+        </tr>
+        <tr>
+            <td>25</td>
+            <td>26</td>
+            <td>27</td>
+            <td>28</td>
+            <td>29</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>31</td>
+            <td>32</td>
+            <td>33</td>
+            <td>34</td>
+            <td>35</td>
+            <td>36</td>
+        </tr>
+    </table>
+
+    <script src="./script.js"></script>
+</body>
+</html>
