@@ -62,3 +62,28 @@ function validate() {
 }
 
 //Task 2
+const cellByVariant = document.getElementById("cellByVariant");
+const chosenColor = document.getElementById("chosenColor");
+const cells = document.querySelectorAll("td");
+
+
+
+cellByVariant.addEventListener("mouseover", () => {
+    let maxVal = 0xFFFFFF; // 16777215
+    let randomNumber = Math.floor(Math.random() * maxVal).toString(16); 
+    let randomBackGroundColor = randomNumber.padStart(6, 0); 
+    cellByVariant.style.background = "#" + randomBackGroundColor;
+});
+
+
+cellByVariant.addEventListener("click", () => {
+    cellByVariant.style.background = chosenColor.value;
+});
+
+cellByVariant.addEventListener("dblclick", () => {
+    var table = document.getElementById("tableWithCells");
+    var columnsCount = table.rows[0].cells.length;
+    for (let index = (10 % columnsCount) - 1; index < columnsCount; index = index + 2) {
+        table.rows[Math.trunc((10 / columnsCount))].cells[index].style.backgroundColor = chosenColor.value;;
+    }
+});
